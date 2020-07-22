@@ -68,8 +68,51 @@
 # old = input('Сколько тебе лет?')
 # print('Мне,',old,'лет', sep=('-')) 
 
-#Принятие решений
-toys = 10
-toys == 1
+# #Принятие решений
+# toys = 10
+# toys == 1
 
-#Ветвление
+# #Ветвление
+# a = int(input('введите знчение a'))
+# b = int(input('введите знчение b'))
+# deyst = input('+-*/')
+# if deyst == '+':
+#     c = a + b
+# elif deyst == '-':
+#     c = a - b
+# elif deyst == '*':
+#     c = a * b
+# elif deyst == '/':
+#     c = a / b
+# else:
+#     c = 'Ошибка!!!'
+# print('Результат,', c)
+
+# Циклы в Python
+# from turtle import *
+# # forward(100)
+# # right(120)
+# # forward(100)
+# # right(120)
+# # forward(100)
+# # right(120)
+# # print('Я нарисовал треугольник!')
+
+# for i in range(3):
+#     forward(100)
+#     right(120)
+
+# for i in range(3, 14, 5): # от, до, шаг
+#     print(i, end=' ') # end=' ' - вывести в строку.
+
+# for i in range(3): # повторить три раза, начиная с 0.
+#     print(i, end=' ') # end=' ' - вывести в строку.
+
+# for i in range(10, 0, -1):
+#     print(i, end=' ') # end=' ' - вывести в строку.
+
+# Вложенные циклы
+n = 3
+for a in range(1, n + 1):
+    for b in range(1, n + 1):
+        print(a, '*', b, '=', b * a)
