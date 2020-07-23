@@ -112,7 +112,62 @@
 #     print(i, end=' ') # end=' ' - вывести в строку.
 
 # Вложенные циклы
-n = 3
-for a in range(1, n + 1):
-    for b in range(1, n + 1):
-        print(a, '*', b, '=', b * a)
+# n = 3
+# for a in range(1, n + 1): #Повторяет заданное количество раз.
+#     for b in range(1, n + 1):
+#         print(a, '*', b, '=', b * a)
+
+# answer = 'да'
+# while answer == 'да': #Повторяет, пока не будет выполнено условие.
+#     answer = input('Пойдёшь плавать?')
+#     print('Я? ', answer)
+# print('Ну тогда я один пойду.')
+
+# # Выход из цикла
+# score = 0
+# table = 7
+# for i in range(1, 13): 
+#     print('Сколько будет', i, '*', table)
+#     guess = input()
+#     if guess == 'стоп':
+#         print('Поздравляю, вы бездарь!')
+#         break #Выйти из цикла.
+#     if guess == 'не знаю':
+#         print('Жаль! Перехожу к следующему вопросу!')
+#         continue #Пропустить шаг, не выходя из цикла.
+#     ans = i * table
+#     if int(guess) == ans:
+#         print('Правильно!')
+#         score = score + 1
+#     else:
+#         print('Это не правильный ответ.', ans)
+# print('Урок окончен!')
+# print('Вы набрали', score, 'очков!')
+# if score>6:
+#     print('Молодец!')
+# else:
+#     print('Потренируйся ещё!') 
+
+#Списки
+# family = ['Папа', 'Мама', 'Ярослав', 'Ростислав', 'Пломбир(кот)']
+# # for i in family:
+# #     print('Привет,', i)
+# print(family[4])
+
+
+# family_grandfather = ['Дедушка', 'Бабушка', 'Инна', 'Людмила', 'Мейджер', 'Пауль', 'Муза', 'Ника']
+
+# na_dache = family + family_grandfather
+# print(na_dache)
+# for i in na_dache:
+#     print('Привет,', i)
+
+food = [['Конфеты', 'Щоколадка', 'Пицца'], ['Борщ', 'Броколи', 'Сельдерей']]
+# print(food)
+print(food[0])
+# print(food[1])
+print(food[1][1])
+
+
+
+
