@@ -162,12 +162,59 @@
 # for i in na_dache:
 #     print('Привет,', i)
 
-food = [['Конфеты', 'Щоколадка', 'Пицца'], ['Борщ', 'Броколи', 'Сельдерей']]
-# print(food)
-print(food[0])
-# print(food[1])
-print(food[1][1])
+# food = [['Конфеты', 'Щоколадка', 'Пицца'], ['Борщ', 'Броколи', 'Сельдерей']]
+# # print(food)
+# print(food[0])
+# # print(food[1])
+# print(food[1][1])
+
+# # Функции
+# def hi():
+#     print('Привет!')
+#     a = 5
+#     b = 5
+#     c = a+b
+#     print(c)
+
+# #hi()
+
+# def night(people1, people2):
+#     print('Спокойной ночи,', people1)
+#     print('Спокойной ночи,', people2)
+
+# night('мама', 'папа')
+# night('Ростислав','Ярослав')
+
+# def dist(speed, time):
+#     distance = speed * time
+#     print(distance, 'км')
+# # dist(80,5)
+
+# def dist2(question):
+#     answer = input(question)
+#     num = int(answer)
+#     return answer
+
+# speed = dist2('Введите вашу скорость:')
+# time = dist2('Введите время, за которое вы проехали расстояние:')
+# print('Вы проехали', speed * time, 'км')
 
 
+# speed = input('Введите вашу скорость:')
+# time = input('Введите время, за которое вы проехали расстояние:')
+# speed = int(speed)
+# time = int(time)
+# print('Вы проехали', speed * time, 'км')
 
+# Забавные фразы
+name = ['папа', 'мама', 'Ярик', 'Ростик', 'Пломбир']
+say = ['летом', 'гулять', 'мяукать', 'зимой', 'домой']
+do = ['идёт', 'летит', 'плывёт', 'бежит', 'прыгает']
 
+from random import randint
+def pick(words):
+    num_words = len(words) #len() - вычисляет, сколько слов в списке.
+    num_picked = randint(0, num_words - 1) #выбирает случайное число, соответствующее одному из элементов списка.
+    word_picked = words[num_picked] #Сохраняет случайное слово в перменной word_picked.
+    return word_picked
+print(pick(name), pick(do), pick(say), '!')
