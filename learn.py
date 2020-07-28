@@ -206,15 +206,51 @@
 # time = int(time)
 # print('Вы проехали', speed * time, 'км')
 
-# Забавные фразы
-name = ['папа', 'мама', 'Ярик', 'Ростик', 'Пломбир']
-say = ['летом', 'гулять', 'мяукать', 'зимой', 'домой']
-do = ['идёт', 'летит', 'плывёт', 'бежит', 'прыгает']
+# # Забавные фразы
+# name = ['папа', 'мама', 'Ярик', 'Ростик', 'Пломбир']
+# say = ['летом', 'гулять', 'мяукать', 'зимой', 'домой']
+# do = ['идёт', 'летит', 'плывёт', 'бежит', 'прыгает']
 
-from random import randint
-def pick(words):
-    num_words = len(words) #len() - вычисляет, сколько слов в списке.
-    num_picked = randint(0, num_words - 1) #выбирает случайное число, соответствующее одному из элементов списка.
-    word_picked = words[num_picked] #Сохраняет случайное слово в перменной word_picked.
-    return word_picked
-print(pick(name), pick(do), pick(say), '!')
+# from random import randint
+# def pick(words):
+#     num_words = len(words) #len() - вычисляет, сколько слов в списке.
+#     num_picked = randint(0, num_words - 1) #выбирает случайное число, соответствующее одному из элементов списка.
+#     word_picked = words[num_picked] #Сохраняет случайное слово в перменной word_picked.
+#     return word_picked
+# print(pick(name), pick(do), pick(say), '!')
+
+
+# # Кортежи и словари
+# mama = ('Настя', 31, 1.60)
+# print(mama[1])
+
+# name, age, height = mama
+# print(name, age, height)
+
+# papa = ('Саша', 31, 1.72)
+
+# parents = [mama, papa]
+# print(parents)
+
+# Переменые и функции
+def func1():
+    a = 10 #локальная переменная (в домике).
+    print(a)
+# func1()
+
+b = 100000 #глобальная переменная.
+def func2():
+    print(b)
+# func2()
+
+def func3(name1, name2):
+    print(name2)
+# func3('папа', 'мама')
+
+def func4(y):
+    print(y)
+    y = 'хлеб'
+    print(y)
+z = 'бутерброд'
+func4(z)
+print(z)
